@@ -43,6 +43,9 @@ function tampilkanData() {
 }
 
 tampilkanData();
-document.getElementById("form").addEventListener("submit", (e) => onSubmit(e));
+
+const form = document.getElementById("form");
+form.addEventListener("submit", (e) => onSubmit(e));
+
 const editButton = document.getElementById("btnEdit");
 editButton.addEventListener("click", (e) => onEdit(e));
